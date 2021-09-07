@@ -1,0 +1,165 @@
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../img/bg-desktop.svg") no-repeat hsl(257, 40%, 49%);
+  background-size: cover;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER */
+
+.header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 10px 20px 10px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 10px 80px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.product,
+.community-quote {
+  flex: 1;
+}
+
+.community-quote h1 {
+  font-size: 2.5em;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.community-quote p {
+  font-size: 1.125em;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.125em;
+  display: block;
+  width: 180px;
+  background: #fff;
+  padding: 15px 0;
+  color: hsl(257, 40%, 49%);
+  border-radius: 40px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+/* FOOTER */
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px 40px 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.facebook,
+.twitter,
+.instagram {
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  background: transparent;
+}
+
+.facebook img,
+.twitter img,
+.instagram img {
+  width: 25px;
+  height: 25px;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
+  background: hsl(300, 69%, 71%);
+  box-shadow: 0 0 0 2px hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 1030px) {
+  body {
+    background: url("../img/bg-mobile.svg") no-repeat hsl(257, 40%, 49%);
+    background-size: cover;
+  }
+
+  .header-nav,
+  .main-content {
+    max-width: 600px;
+  }
+
+  .header-nav {
+    margin: 0 auto;
+    padding: 50px 10px 20px 10px;
+  }
+
+  .main-content {
+    text-align: center;
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .community-quote h1 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  .community-quote p {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding-top: 40px;
+    justify-content: center;
+  }
+}
